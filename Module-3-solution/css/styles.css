@@ -1,0 +1,129 @@
+body {
+  color: #fff;
+  background-color: #664400;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #999966;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Abril Fatface', cursive;
+  color: #333300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+          /* Butoon and Dropdown menu */
+.navbar-header button{
+  margin-top: 22px;
+}
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #999900;
+}
+#nav-list li a {
+  color: #333300;
+  text-align: center;
+  font-weight: bold;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+#nav-list li:nth-child(1), li:nth-child(2){
+  border-bottom: 1px solid black;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #333300;
+}
+/* END HEADER */
+
+
+/* Main Content */
+h2{
+  margin-bottom: 30px;
+  font-family: 'Abril Fatface', cursive;
+  color: #000000;
+}
+
+section{
+  border: 2px solid black;
+  margin: 10px;
+  background-color: #cc9966;
+  box-shadow: 0 0 80px #261a0d;
+  width: 100%;
+}
+h3{
+  margin-top: 20px;
+  color: #664400;
+  font-family: serif;
+  font-weight: bold;
+}
+section p{
+  color: black;
+  margin: 10px;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.2em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row{
+  margin-bottom: 60px;
+  width: 100%;
+}
+/* End of Main Content */
+
+
+
+/********** Large and Medium devices only **********/
+@media (min-width: 992px){
+  .col-md-4{
+    float: left;
+    width: 33.33%
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width:769px) and (max-width: 991px){
+  .col-sm-6{
+    float: left;
+    width: 50%;
+  }
+  .col-sm-12{
+    float: left;
+    width: 100%;
+  }
+}
+
+/********** Extra Small devices only **********/
+@media (max-width: 768px){
+  .col-xs-12{
+    float: left;
+    width: 100%;
+  }
+  #collapsable-nav{
+    border: 1px solid black;
+  }
+}
